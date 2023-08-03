@@ -19,7 +19,7 @@ def add():
         result = first_no + second_no
 
         # Return a response
-        return jsonify({'result: ' + str(result)}), 200
+        return jsonify({'result': str(result)}), 200
 
     except KeyError:
         return jsonify({'error': 'Invalid JSON data or missing fields.'}), 400
@@ -38,7 +38,7 @@ def subtract():
         result = first_no - second_no
 
         # Return a response
-        return jsonify({'result: ' + str(result)}), 200
+        return jsonify({'result': str(result)}), 200
 
     except KeyError:
         return jsonify({'error': 'Invalid JSON data or missing fields.'}), 400
